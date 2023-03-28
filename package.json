@@ -1,0 +1,19 @@
+{
+  "name": "nodets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
