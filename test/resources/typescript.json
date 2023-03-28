@@ -1,0 +1,5 @@
+{
+  "Import": "import { JisonLexer, JisonLexerApi } from '@ts-jison/lexer';\n",
+  "Constructor": "export class {{NAME}}Lexer extends JisonLexer implements JisonLexerApi {\n    options: any = {{OPTIONS}};\n    constructor (yy = {}) {\n        super(yy);\n    }\n\n    rules: RegExp[] = {{RULES}};\n    conditions: any = {{CONDITIONS}}\n    performAction (yy:any,yy_:any,$avoiding_name_collisions:any,YY_START:any): any {\n{{ACTION_INCLUDE}}          var YYSTATE=YY_START;\n        switch($avoiding_name_collisions) {\n{{STATE_ACTIONS}}\n        }\n    }\n}\n",
+  "Export": ""
+}

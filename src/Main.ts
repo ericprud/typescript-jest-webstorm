@@ -1,20 +1,23 @@
 import * as Fs from 'fs';
-import {Helper} from './Helper.js';
+import {FileTemplate} from "./util/FileTemplate";
 
-console.log("fs");
-
-class Main {
-    static HelperInst = new Helper();
+export class Main {
     protected dirContents: string[];
 
     constructor(path: string) {
         this.dirContents = Fs.readdirSync(path);
     }
 
-    run(): void {
-        console.log(new Helper().getHelp(), this.dirContents);
+    run(from: string, format: FileTemplate.Format): string {
+        const t = new FileTemplate(from, format)
+        // console.log([...t.entries()]);
+        return '"' + t.substitute('Constructor', {NAME: "Bob", OPTIONS: "OpTiOnS"}) + '"'
+            + this.dirContents.join(', ');
     }
 }
 
-const index = new Main(".");
-index.run();
+/* istanbul ignore next */
+if (require.main.loaded) {
+    const index = new Main(".");
+    console.log(index.run("test/resources/typescript.yaml", FileTemplate.Format.YAML));
+}
