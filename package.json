@@ -2,7 +2,7 @@
   "name": "nodets",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
+  "main": "src/Main.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.5.0",
     "@types/node": "^18.15.10",
+    "jest": "^29.5.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
   }

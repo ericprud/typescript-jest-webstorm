@@ -1,9 +1,9 @@
 import * as Fs from 'fs';
-import {Helper} from './helper.js';
+import {Helper} from './Helper.js';
 
 console.log("fs");
 
-class Index {
+class Main {
     static HelperInst = new Helper();
     protected dirContents: string[];
 
@@ -16,5 +16,5 @@ class Index {
     }
 }
 
-const index = new Index(".");
+const index = new Main(".");
 index.run();
