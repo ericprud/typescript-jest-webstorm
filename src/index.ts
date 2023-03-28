@@ -1,10 +1,11 @@
 import * as Fs from 'fs';
-console.log("fs");
 import {Helper} from './helper.js';
+
+console.log("fs");
 
 class Index {
     static HelperInst = new Helper();
-    private dirContents: string[];
+    protected dirContents: string[];
 
     constructor(path: string) {
         this.dirContents = Fs.readdirSync(path);
