@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc2f15d9-df07-4294-9ce8-121882a4ac9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Cli.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Main-test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/Main-test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Cli.ts ts-node">
+  <component name="RunManager" selected="Node.js.Cli.ts /c loader">
     <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -219,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680037495681</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="~ s/Main/Application/, + Cli">
+      <created>1680070206526</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680070206526</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,10 +251,23 @@
     <MESSAGE value="~ as classes" />
     <MESSAGE value="~ Main and Helper" />
     <MESSAGE value="+ FileTemplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ FileTemplate" />
+    <MESSAGE value="~ s/Main/Application/, + Cli" />
+    <option name="LAST_COMMIT_MESSAGE" value="~ s/Main/Application/, + Cli" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/util/FileTemplate.ts</url>
+          <line>21</line>
+          <properties lambdaOrdinal="0" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nodets$FileTemplate.info" NAME="FileTemplate Coverage Results" MODIFIED="1680026840189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

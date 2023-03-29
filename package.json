@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc",
-    "test": "node ."
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
