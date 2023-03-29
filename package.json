@@ -2,7 +2,7 @@
   "name": "nodets",
   "version": "1.0.0",
   "description": "",
-  "main": "src/Main.ts",
+  "main": "src/Application.ts",
   "type": "commonjs",
   "scripts": {
     "build": "tsc",

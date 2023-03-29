@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc2f15d9-df07-4294-9ce8-121882a4ac9c" name="Changes" comment="" />
+    <list default="true" id="fc2f15d9-df07-4294-9ce8-121882a4ac9c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Cli.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Main-test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/Main-test.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +81,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.All Tests">
+  <component name="RunManager" selected="Node.js.Cli.ts ts-node">
     <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -83,6 +89,19 @@
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Application-test" type="JavaScriptTestRunnerJest">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/Application-test.ts" />
+      <test-names>
+        <test-name value="Main" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="FileTemplate-test" type="JavaScriptTestRunnerJest">
@@ -126,37 +145,20 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Main-test" type="JavaScriptTestRunnerJest">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/test/Main-test.ts" />
-      <test-names>
-        <test-name value="Main" />
-      </test-names>
+    <configuration name="Cli.ts /c loader" type="NodeJSConfigurationType" node-parameters="--loader ts-node/esm" path-to-js-file="src/Cli.ts" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
-    <configuration name="Main.ts" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/Main.ts" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.ts /c loader" type="NodeJSConfigurationType" node-parameters="--loader ts-node/esm" path-to-js-file="src/Main.ts" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.ts ts-node" type="NodeJSConfigurationType" path-to-node="$PROJECT_DIR$/node_modules/.bin/ts-node-esm" path-to-js-file="src/Main.ts" working-dir="$PROJECT_DIR$">
+    <configuration name="Cli.ts ts-node" type="NodeJSConfigurationType" path-to-node="$PROJECT_DIR$/node_modules/.bin/ts-node-esm" path-to-js-file="src/Cli.ts" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Jest.All Tests" />
       <item itemvalue="Jest.FileTemplate-test" />
-      <item itemvalue="Jest.Main-test" />
+      <item itemvalue="Jest.Application-test" />
       <item itemvalue="Jest.FileTemplate.should substitute" />
       <item itemvalue="Jest.FileTemplate.should whine" />
-      <item itemvalue="Node.js.Main.ts" />
-      <item itemvalue="Node.js.index.ts ts-node" />
-      <item itemvalue="Node.js.index.ts /c loader" />
+      <item itemvalue="Node.js.Cli.ts ts-node" />
+      <item itemvalue="Node.js.Cli.ts /c loader" />
     </list>
     <recent_temporary>
       <list>
@@ -249,26 +251,9 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Main.ts</url>
-          <line>3</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Main.ts</url>
-          <line>20</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/nodets$FileTemplate.info" NAME="FileTemplate Coverage Results" MODIFIED="1680026840189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/nodets$All_Tests.info" NAME="All Tests Coverage Results" MODIFIED="1680069557466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/nodets$Main_test.info" NAME="Main-test Coverage Results" MODIFIED="1680031735026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

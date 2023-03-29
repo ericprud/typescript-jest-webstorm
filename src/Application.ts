@@ -1,7 +1,7 @@
 import * as Fs from 'fs';
 import {FileTemplate} from "./util/FileTemplate";
 
-export class Main {
+export class Application {
     protected dirContents: string[];
 
     constructor(path: string) {
@@ -14,10 +14,4 @@ export class Main {
         return '"' + t.substitute('Constructor', {NAME: "Bob", OPTIONS: "OpTiOnS"}) + '"'
             + this.dirContents.join(', ');
     }
-}
-
-/* istanbul ignore next */
-if (require.main.loaded) {
-    const index = new Main(".");
-    console.log(index.run("test/resources/typescript.yaml", FileTemplate.Format.YAML));
 }
