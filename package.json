@@ -1,14 +1,20 @@
 {
-  "name": "nodets",
-  "version": "1.0.0",
-  "description": "",
+  "name": "typescript-jest-webstorm",
+  "private": true,
+  "version": "0.1.0",
+  "description": "This package is an example built from typescript and jest in WebStorm",
+  "repository": "https://github.com/ericprud/typescript-jest-webstorm",
   "main": "src/Application.ts",
   "type": "commonjs",
   "scripts": {
     "build": "tsc",
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "jest",
+    "webstorm"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
